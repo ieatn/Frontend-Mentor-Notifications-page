@@ -1,0 +1,112 @@
+:root {
+    --Red: hsl(1, 90%, 64%);
+    --Blue: hsl(219, 85%, 26%);
+    --White: hsl(0, 0%, 100%);
+    --Very-light-grayish-blue: hsl(210, 60%, 98%);
+    --Light-grayish-blue-1: hsl(211, 68%, 94%);
+    --Light-grayish-blue-2: hsl(205, 33%, 90%);
+    --Grayish-blue: hsl(219, 14%, 63%);
+    --Dark-grayish-blue: hsl(219, 12%, 42%);
+    --Very-dark-blue: hsl(224, 21%, 14%);
+}
+@font-face {
+    font-family: ff;
+    src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+@font-face {
+    font-family: ff-bolder;
+    src: url('assets/fonts/static/PlusJakartaSans-ExtraBold.ttf');
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    font-family: ff;
+    padding: 20px;
+    background-color: rgb(243, 240, 240);
+    color: var(--Very-dark-blue);
+}
+p {
+    opacity: 0.6;
+}
+.name {
+    opacity: 1;
+}
+.container {
+    width: 800px;
+    max-width: 100%;
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex {
+    display: flex;
+    align-items: center; 
+    gap: 1rem;
+}
+.box {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    border-radius: 10px;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+.box .active {
+    background-color: rgb(240, 240, 240);
+}
+.chess {
+    display: flex;
+    justify-content: space-between;
+}
+.chess div:first-child {
+    display: flex;
+    gap: 1rem;
+}
+img {
+    width: 50px;
+    height: 50px;
+}
+.name {
+    color: var(--Very-dark-blue);
+    font-weight: bold;
+    font-weight: ff-bolder;
+}
+.highlight {
+    color: var(--Blue);
+    font-weight: bold;
+    font-weight: ff-bolder;
+}
+.readAll {
+    font-weight: bold;
+    color: var(--Dark-grayish-blue);
+    cursor: pointer;
+}
+.square {
+    background-color: blue;
+    width: 30px;
+    height: 20px;
+    border-radius: 5px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.pm {
+    border: 1px solid var(--Light-grayish-blue-1);
+    border-radius: 5px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
